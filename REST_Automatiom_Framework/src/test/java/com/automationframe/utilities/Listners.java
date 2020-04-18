@@ -19,7 +19,7 @@ public class Listners extends TestListenerAdapter
 	public ExtentHtmlReporter htmlrep;
 	public void onStart(ITestContext testContext)
 	{
-		htmlrep=new ExtentHtmlReporter(System.getProperty("user.dir")+"MyReport.html");
+		htmlrep=new ExtentHtmlReporter(" C://Program Files (x86)//Jenkins//jobs//RestAssured_Api_Test//htmlreports//HTML_20Report//MyReport.html");
 		htmlrep.config().setDocumentTitle("Automation Report ");
 		htmlrep.config().setReportName("Functional Testing");
 		htmlrep.config().setTheme(Theme.DARK);
