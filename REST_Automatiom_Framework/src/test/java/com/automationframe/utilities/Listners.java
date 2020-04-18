@@ -19,7 +19,7 @@ public class Listners extends TestListenerAdapter
 	public ExtentHtmlReporter htmlrep;
 	public void onStart(ITestContext testContext)
 	{
-		htmlrep=new ExtentHtmlReporter("System.getProperty("user.dir")+"//test-output//index.html");
+		htmlrep=new ExtentHtmlReporter(System.getProperty("user.dir")+"//test-output//index.html");
 		htmlrep.config().setDocumentTitle("Automation Report ");
 		htmlrep.config().setReportName("Functional Testing");
 		htmlrep.config().setTheme(Theme.DARK);
